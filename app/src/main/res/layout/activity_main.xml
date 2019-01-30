@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,5 +13,27 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
     </android.support.v7.widget.RecyclerView>
+        <android.support.design.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:fabAttached="true"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:fabCradleVerticalOffset="12dp">
 
-</android.support.constraint.ConstraintLayout>
+
+    </android.support.design.bottomappbar.BottomAppBar>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@android:color/holo_red_dark"
+        android:layout_gravity="bottom|center_horizontal"
+        android:src="@drawable/ic_add_white_24dp"
+        app:layout_anchor="@+id/bottom_appbar"/>
+
+</android.support.design.widget.CoordinatorLayout>
