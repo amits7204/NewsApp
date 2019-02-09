@@ -5,4 +5,8 @@
     <color name="colorAccent">#D81B60</color>
     <color name="daynight_textColor">#212121</color>
     <color name="daynight_cardColor">#FFFFFF</color>
+    <color name="daynight_bottombar">#000000</color>
+    <color name="daynight_fab">#e5c100</color>
+    <color name="daynight_divider">#d1d1d1</color>
+    <color name="daynight_tab">#b2213b</color>
 </resources>

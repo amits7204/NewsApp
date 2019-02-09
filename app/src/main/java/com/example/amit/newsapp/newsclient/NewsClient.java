@@ -9,7 +9,6 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NewsClient {
-    public static final String BASE_URL = "https://newsapi.org/v2/";
 
     private static Retrofit mRetrofit = null;
     private static Retrofit getClient(){
@@ -21,7 +20,7 @@ public class NewsClient {
                 .build();
 
         mRetrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(NewsApi.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(lClient)
                 .build();
@@ -31,5 +30,7 @@ public class NewsClient {
     public static NewsApi getNewsApi(){
         return getClient().create(NewsApi.class);
     }
-
+    public static NewsApi getTheHinduNewsApi(){
+        return getClient().create(NewsApi.class);
+    }
 }

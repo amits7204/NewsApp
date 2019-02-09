@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2017 by Murali Chilukuri
+  ~
+  ~ All rights reserved. No part of this publication may be reproduced, distributed,
+  ~ or transmitted in any form or by any means, including photocopying, recording,
+  ~ or other electronic or mechanical methods, without the prior written permission
+  ~ of the publisher.
+  ~
+  ~ Murali Chilukuri
+  ~ Trioka  Software Pvt Ltd,
+  ~ Bengaluru, Karnataka, India.
+  -->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <translate
+        android:duration="100"
+        android:fromYDelta="100%p"
+        android:toYDelta="0" />
+
+</set>
