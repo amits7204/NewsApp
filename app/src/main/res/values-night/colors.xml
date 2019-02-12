@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#ffffff</color>
     <color name="colorAccent">#FF4081</color>
     <color name="daynight_textColor">#ECEFF1</color>
     <color name="daynight_cardColor">#000000</color>
     <color name="daynight_bottombar">#000000</color>
     <color name="daynight_fab">#e5c100</color>
     <color name="daynight_divider">#d1d1d1</color>
-    <color name="daynight_tab">#b2213b</color>
+    <color name="daynight_tab">#ffffff</color>
 
 </resources>

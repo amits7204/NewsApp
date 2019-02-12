@@ -41,6 +41,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
 
         newsViewHolder.mNewsTittle.setText(mNewsArticlesList.get(aPosition).getTitle());
         newsViewHolder.mNewsSource.setText(mNewsArticlesList.get(aPosition).getSource().getName());
+        newsViewHolder.mIndiaNewsDiscription.setText(mNewsArticlesList.get(aPosition).getDescription());
     }
 
     @Override
@@ -51,12 +52,13 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
     public class NewsViewHolder extends RecyclerView.ViewHolder
     {
         public ImageView mNewsImage;
-        public TextView mNewsTittle, mNewsSource;
+        public TextView mNewsTittle, mNewsSource, mIndiaNewsDiscription;
         public NewsViewHolder(@NonNull View itemView) {
             super(itemView);
             mNewsImage = (ImageView) itemView.findViewById(R.id.news_image);
             mNewsTittle = (TextView) itemView.findViewById(R.id.news_tittle);
             mNewsSource = (TextView) itemView.findViewById(R.id.news_source);
+            mIndiaNewsDiscription = (TextView) itemView.findViewById(R.id.news_discription);
 
         }
     }

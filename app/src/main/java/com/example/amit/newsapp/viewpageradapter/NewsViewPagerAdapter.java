@@ -14,7 +14,7 @@ public class NewsViewPagerAdapter extends FragmentPagerAdapter {
     public NewsViewPagerAdapter(FragmentManager fm) {
         super(fm);
         mFragmentPageAdapter = new Fragment[]{new TheHinduFragment(),
-                new PIBNewsFragment(), new IndianExpressFragment()};
+                new IndianExpressFragment(), new PIBNewsFragment()};
     }
 
     @Override
@@ -30,7 +30,7 @@ public class NewsViewPagerAdapter extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int aPosition) {
-        String[] lPageTittle = new String[]{"The Hindu", "Pib News", "Indian Express"};
+        String[] lPageTittle = new String[]{"The Hindu", "Indian Express", "Pib News"};
         return lPageTittle[aPosition];
     }
 }

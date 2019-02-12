@@ -4,7 +4,7 @@
     android:id="@+id/news_cardview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp"
+    android:layout_margin="8dp"
     card_view:cardCornerRadius="8dp"
     android:background="@color/daynight_cardColor">
         <LinearLayout
@@ -45,7 +45,7 @@
                     android:layout_margin="2dp"
                     android:textStyle="normal"
                     android:textSize="12sp"
-                    android:textColor="@android:color/white"/>
+                    android:textColor="@color/daynight_textColor"/>
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -58,6 +58,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/daynight_textColor"/>
+        <TextView
+            android:id="@+id/news_discription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
             android:textStyle="bold"
             android:textSize="16sp"
             android:textColor="@color/daynight_textColor"/>

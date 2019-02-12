@@ -2,14 +2,13 @@ package com.example.amit.newsapp;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.app.AppCompatDelegate;
+import android.support.v7.widget.Toolbar;
+
 import com.example.amit.newsapp.R;
 import com.example.amit.newsapp.viewpageradapter.NewsViewPagerAdapter;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     public final String Tag = "MainActivity";
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+//        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         setContentView(R.layout.activity_main);
         ViewPager lViewPager = findViewById(R.id.view_pager);
         mNViewPagerAdapter = new NewsViewPagerAdapter(getSupportFragmentManager());
@@ -39,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout lTabLayout = (TabLayout) findViewById(R.id.new_tab_layout);
         lTabLayout.setupWithViewPager(lViewPager);
+        lTabLayout.setSelectedTabIndicatorColor(ContextCompat.getColor(this, R.color.daynight_bottombar));
+        Toolbar lToolbar = findViewById(R.id.toolbar);
+
+        lToolbar.setTitle("@News Stuff");
+        lToolbar.setLogo(R.drawable.news);
+//        setSupportActionBar(lToolbar);
 
        /* mFab = findViewById(R.id.fab);
         mFab1 = findViewById(R.id.fab_1);
