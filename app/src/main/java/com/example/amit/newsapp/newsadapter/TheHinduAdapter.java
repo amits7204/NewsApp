@@ -15,6 +15,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.amit.newsapp.R;
@@ -81,7 +82,7 @@ public class TheHinduAdapter extends RecyclerView.Adapter<TheHinduAdapter.TheHin
     public class TheHinduViewHolder extends RecyclerView.ViewHolder{
         public ImageView mImageView;
         public TextView mSourceName, mTittle, mNewsDiscription;
-        private CardView mCardView;
+        private LinearLayout mCardView;
         public TheHinduViewHolder(@NonNull View itemView) {
             super(itemView);
             mImageView = (ImageView) itemView.findViewById(R.id.hindu_image);
